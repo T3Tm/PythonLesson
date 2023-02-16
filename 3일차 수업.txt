@@ -1,0 +1,63 @@
+turtle
+마우스 , 키보드를 이용해서 그림을 그리도록 지원해주는 모듈이다.
+
+벡터 기반 위치, 방향, 펜 3가지 속성을 통해 화면에 그림을 그릴 수 있도록 명령 메소드를 제공함
+
+첫 좌표는 (0,0)
+
+
+처음으로 객체가 나옴 => 하나의 사물이라고 생각
+
+입출력 turtle.textinput('title','문자열')
+turtle.colormode(mode)
+mode = 1,255
+1은 색상은 'red' , 'blue' 이런 형식으로 넣어야함
+255는 색상을 rgb 형식으로 넣어야함
+
+1. 기본 명령어 (모양 , 이동, 회전)
+    -1. title('그래픽 창 이름') 그래픽 창 이름을 지정
+    -2. shape('커서 모양') 커서의 모양을 결정
+        1. classic
+        2. arrow
+        3. turtle
+        4. circle
+        5. square
+        6. triangle
+    -3 speed(속도) 거북이 속도 지정(0: 최고, 1:느림, 10: 빠름)
+    -4 backward(픽셀 수) ,bk, back
+    -5 forward(픽셀 수) fd
+    -6 left(각도) lt
+    -7 right(각도) rt
+    -8 circle(반지름) 원 그리기
+    circle(반지름,몇 도, 각의 갯수)
+
+2. 색상 관련 명령어
+    -1. color('색상') pencolor('색상') 펜 색 지정
+    -2. fillcolor('색상') 도형 안을 채우는 색 지정
+    -3. begin_fill() 채우기 시작
+    -4. end_fill() 채우기 끝
+
+3. 펜 관련 명령어
+    -1. width(선의 굵기) , pensize(선의 굵기) 
+    -2. penup() pu(),up() 펜 올리기
+    -3. pendown() pd() down() 펜 내리기
+
+4. 좌표 관련 명령어
+    -1. home() 실행 초기 좌표로 돌아가고 각도 초기화
+    -2. goto(x,y) x,y 좌표 이동 setpos(), setposition()
+    -3. setx() 지정한 x 좌표로 이동
+    -4. sety() 지정한 y 좌표로 이동
+    -5. position() pos() 현재 좌표 얻기
+    -6. distance(x,y) 현재 좌표에서 x,y까지의 거리 구하기
+
+5. 화면 및 기타 명령어
+    -1. reset() 화면 초기화 그리고 화면 지운다. 완전히 초기화라고 생각해야됨. 속도도 초기화
+    -2. clear() 화면 지운다.
+    -3. showturtle() st() 거북이 화면에 표시
+    -4. hidturtle() ht() 거북이 가림
+    -5. bgcolor('색상') 배경 색상으로 표시
+    -6. stamp() 커서를 화면에 찍기
+    -7. write() 창에 글씨 찍기
+
+
+1. 동그라미 안에 별을 찍기

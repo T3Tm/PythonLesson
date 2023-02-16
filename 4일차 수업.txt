@@ -1,0 +1,36 @@
+tkinter
+
+GUI => graphic user interface
+
+모듈 명령어 
+
+Tk() => 윈도우 생성
+geometry('가로크기*세로크기')
+title('창이름')
+mainloop()
+
+component 활용
+
+Label(띄울 윈도우, 옵션) 문자열 표시
+Entry(띄울 윈도우, 옵션...) 입력칸 
+Button(띄울 윈도우,옵션..) 버튼
+Radiobutton(띄울 윈도우,text='문자열', variable = 어떤 변수 처리?,value= 선택됐을 때 값,command=함수)
+Checkbutton(띄울 윈도우,text='문자열',variable=어떤 변수 처리?)
+옵션에는 
+text, 
+height 줄 수/ 위젯 높이 지정
+width  글자 수 / 너비 지정
+bg : 배경 색 지정 , fg : 전경색 지정(앞 배경)
+show : Entry 위젯의 옵션 , 패스워드 형식으로 표시할 문자 지정 예를 들어 ) *
+command : 이벤트 처리 함수 넣기
+
+위젯 배치
+1. pack(side=정렬 기준) LEFT, RIGHT, TOP, BOTTOM정렬
+-   위젯 사이의 여백 조절 padx = 픽셀 값 , pady
+-   내부 폭 조절 ipadx , ipady
+2. place 절대 위치
+    place(x= , y= , width=, height=) width,height은 위젯의 너비와 높이를 말함 없을 수도 있다.
+3. grid (테이블 형식으로 레이아웃 배치)
+    왼쪽부터 row=0 column=0 임
+
+PhotoImage(file='파일 경로')
